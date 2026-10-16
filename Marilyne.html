@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Marilyne 💗</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(
+            135deg,
+            #ffe0ec,
+            #ffc1d6,
+            #fff0f5,
+            #ffb6d0
+        );
+        background-size: 300% 300%;
+        animation: fondo 10s ease infinite;
+        color: #8b2450;
+        padding: 25px 15px;
+    }
+
+    @keyframes fondo {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+    }
+
+    .tarjeta {
+        position: relative;
+        width: 100%;
+        max-width: 520px;
+        padding: 40px 28px;
+        text-align: center;
+        border: 1px solid rgba(255,255,255,.8);
+        border-radius: 30px;
+        background: rgba(255,255,255,.76);
+        backdrop-filter: blur(15px);
+        box-shadow: 0 20px 60px rgba(190, 56, 111, .20);
+        z-index: 2;
+        animation: aparecer 1.2s ease;
+    }
+
+    @keyframes aparecer {
+        from {
+            opacity: 0;
+            transform: translateY(30px) scale(.95);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+
+    .corona {
+        font-size: 48px;
+        margin-bottom: 12px;
+        animation: latir 2s infinite;
+    }
+
+    @keyframes latir {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.12); }
+    }
+
+    .etiqueta {
+        font-size: 11px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #d05285;
+        margin-bottom: 14px;
+        font-weight: bold;
+    }
+
+    h1 {
+        font-family: Georgia, serif;
+        font-size: clamp(42px, 10vw, 62px);
+        color: #c42d70;
+        line-height: 1.15;
+        margin-bottom: 15px;
+    }
+
+    .subtitulo {
+        font-size: 16px;
+        color: #96516c;
+        line-height: 1.8;
+        margin-bottom: 25px;
+    }
+
+    .separador {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 25px 0;
+        color: #e56b9e;
+    }
+
+    .separador::before,
+    .separador::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #f3b5ce;
+    }
+
+    button {
+        border: none;
+        padding: 15px 27px;
+        border-radius: 50px;
+        background: linear-gradient(135deg, #ee78a7, #d63378);
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 8px 22px rgba(214, 51, 120, .28);
+        transition: transform .3s, box-shadow .3s;
+    }
+
+    button:hover {
+        transform: translateY(-3px) scale(1.03);
+        box-shadow: 0 12px 28px rgba(214, 51, 120, .38);
+    }
+
+    .carta {
+        display: none;
+        margin-top: 28px;
+        padding: 25px 20px;
+        background: #fff6fa;
+        border: 1px solid #f9d2e2;
+        border-radius: 20px;
+        text-align: left;
+        animation: aparecer .8s ease;
+    }
+
+    .carta h2 {
+        text-align: center;
+        font-family: Georgia, serif;
+        font-size: 27px;
+        color: #c42d70;
+        margin-bottom: 20px;
+    }
+
+    .carta p {
+        font-size: 15px;
+        line-height: 1.95;
+        color: #82415c;
+        margin-bottom: 14px;
+    }
+
+    .firma {
+        text-align: right;
+        font-family: Georgia, serif;
+        font-style: italic;
+        font-size: 21px;
+        color: #c42d70;
+        margin-top: 22px;
+    }
+
+    .final {
+        margin-top: 22px;
+        font-size: 13px;
+        color: #c45b87;
+    }
+
+    .corazon-flotante {
+        position: fixed;
+        bottom: -40px;
+        pointer-events: none;
+        z-index: 1;
+        animation: flotar linear forwards;
+        opacity: .75;
+    }
+
+    @keyframes flotar {
+        0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 0;
+        }
+        15% { opacity: .8; }
+        100% {
+            transform: translateY(-115vh) rotate(35deg);
+            opacity: 0;
+        }
+    }
+
+    .brillo {
+        color: #ec6b9f;
+    }
+
+    @media (max-width: 420px) {
+        .tarjeta {
+            padding: 32px 20px;
+        }
+
+        .carta {
+            padding: 22px 16px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<main class="tarjeta">
+
+    <div class="corona">💗</div>
+
+    <div class="etiqueta">Una sorpresa para alguien especial</div>
+
+    <h1>Marilyne</h1>
+
+    <p class="subtitulo">
+        Hay personas que hacen que el mundo sea más bonito
+        simplemente por existir...<br>
+        <strong>Y vos sos una de ellas. 🌷</strong>
+    </p>
+
+    <div class="separador">♡</div>
+
+    <p class="subtitulo">
+        Preparé algo para vos, con mucho cariño.<br>
+        Porque hay cosas que merecen decirse desde el corazón.
+    </p>
+
+    <button id="boton" onclick="abrirCarta()">
+        Abrí tu sorpresa 💌
+    </button>
+
+    <section class="carta" id="carta">
+
+        <h2>Para vos, mi amor 🌹</h2>
+
+        <p>
+            Mi amorchito, Marilyne:
+        </p>
+
+        <p>
+            Amor ya dormire así que buenas noches te amo y yo más, y que estes durmiendo bien y soñando bonito, te mando muchisimos besitos y yo más JAJAJAJAJAJAJA
+        </p>
+
+        <p>
+            Seguro vas a ver estoy cuando amanezca pero... Quería regalarte un pequeño momento bonito,
+            algo que te recuerde lo especial que sos para mí.
+            A veces las palabras no alcanzan para expresar
+            todo lo que uno siente, pero aun así quiero
+            intentarlo.
+        </p>
+
+        <p>
+            De todas las cosas lindas que puede ofrecernos
+            la vida, conocer a alguien que te hace sonreír
+            de una manera especial es una de las más bonitas.
+            Y vos tenés esa magia. ❤️
+        </p>
+
+        <p>
+            Si pudiera pedir un deseo, sería seguir creando
+            recuerdos hermosos con vos, compartir risas,
+            acompañarte en los días difíciles y celebrar
+            juntos cada pequeña alegría.
+        </p>
+
+        <p>
+            No necesitaba una fecha especial para recordarte
+            lo importante que sos. Simplemente hoy quise
+            hacerte sonreír y recordarte que hay alguien
+            que pensó en vos lo suficiente como para preparar
+            esta pequeña sorpresa.
+        </p>
+
+        <p>
+            Espero que cuando leas esto, se te escape una
+            sonrisita. Porque si consigo eso, ya habrá valido
+            la pena cada detalle de esta página. 🥹💕
+        </p>
+
+        <div class="firma">
+            Con mucho amor,<br>
+            YO el que te ama más y yo más ❤️
+        </div>
+
+    </section>
+
+    <div class="final">
+        Hecho con <span class="brillo">♥</span> especialmente para vos
+    </div>
+
+</main>
+
+<script>
+    function abrirCarta() {
+        const carta = document.getElementById("carta");
+        const boton = document.getElementById("boton");
+
+        if (carta.style.display === "block") {
+            return;
+        }
+
+        carta.style.display = "block";
+        boton.textContent = "Tu sorpresa está abierta 💖";
+        boton.style.opacity = "0.8";
+        boton.style.cursor = "default";
+
+        for (let i = 0; i < 30; i++) {
+            setTimeout(crearCorazon, i * 100);
+        }
+
+        setTimeout(() => {
+            carta.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest"
+            });
+        }, 200);
+    }
+
+    function crearCorazon() {
+        const corazon = document.createElement("div");
+        const simbolos = ["💗", "💕", "💖", "🌸", "♥"];
+
+        corazon.className = "corazon-flotante";
+        corazon.textContent =
+            simbolos[Math.floor(Math.random() * simbolos.length)];
+
+        corazon.style.left = Math.random() * 100 + "vw";
+        corazon.style.fontSize = (16 + Math.random() * 22) + "px";
+        corazon.style.animationDuration = (4 + Math.random() * 4) + "s";
+
+        document.body.appendChild(corazon);
+
+        setTimeout(() => corazon.remove(), 8500);
+    }
+
+    // Pequeños corazones que decoran el fondo.
+    setInterval(crearCorazon, 900);
+</script>
+
+</body>
+</html>
